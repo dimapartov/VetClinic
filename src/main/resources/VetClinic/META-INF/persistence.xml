@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+  <persistence-unit name="default">
+
+    <class>VetClinic.Entities.CardEntity</class>
+    <class>VetClinic.Entities.ClientEntity</class>
+    <class>VetClinic.Entities.DoctorEntity</class>
+    <class>VetClinic.Entities.OfficeEntity</class>
+    <class>VetClinic.Entities.PetEntity</class>
+    <class>VetClinic.Entities.VisitEntity</class>
+    <properties>
+      <property name="toplink.jdbc.url" value="jdbc:postgresql://localhost:5432/VetClinic"/>
+      <property name="toplink.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="toplink.jdbc.user" value="postgres"/>
+      <property name="toplink.jdbc.password" value="elan0209"/>
+      <property name="hibernate.connection.url" value="jdbc:postgresql://localhost:5432/VetClinic"/>
+      <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+      <property name="hibernate.connection.username" value="postgres"/>
+      <property name="hibernate.connection.password" value="elan0209"/>
+      <property name="openjpa.ConnectionURL" value="jdbc:postgresql://localhost:5432/VetClinic"/>
+      <property name="openjpa.ConnectionDriverName" value="org.postgresql.Driver"/>
+      <property name="openjpa.ConnectionUserName" value="postgres"/>
+      <property name="openjpa.ConnectionPassword" value="elan0209"/>
+      <property name="eclipselink.jdbc.url" value="jdbc:postgresql://localhost:5432/VetClinic"/>
+      <property name="eclipselink.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="eclipselink.jdbc.user" value="postgres"/>
+      <property name="eclipselink.jdbc.password" value="elan0209"/>
+    </properties>
+  </persistence-unit>
+</persistence>
